@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:padding="10dp">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Custom Dialog Heading"
+            android:layout_marginTop="3dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:id="@+id/TVnewPhoneNo"/>
+
+        <View
+            android:id="@+id/separator1"
+            android:layout_below="@+id/TVnewPhoneNo"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_dark"
+            />
+
+        <TextView
+            android:id="@+id/TVnewMessage"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:text="Your Message is here..."
+            android:scrollbars="vertical"
+            android:layout_below="@+id/TVnewPhoneNo"
+            android:textSize="15sp"
+            android:textColor="#000" />
+
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="170dp"
+            android:background="@android:color/holo_blue_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#33bbff"
+            android:id="@+id/action_ok"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RETRY"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#33bbff"
+            android:id="@+id/action_retry"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
